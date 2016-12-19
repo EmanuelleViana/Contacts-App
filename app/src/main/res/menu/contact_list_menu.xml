@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="schemas.android.com/tools"
+    tools:context="com.emanuelle.easycontacts.ui.List_ContactsActivity">
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/menu_profileface"
+        android:title="@string/menu_face"/>
+
+    <item
+        android:id="@+id/menu_add_contact"
+        android:title="@string/menu_contacts_list" />
+    <item
+        android:id="@+id/ordenarN"
+        android:title="Ordenar Por Nome" />
+
+    <item
+        android:id="@+id/ordenarT"
+        android:title="Ordenar Por Telefone" />
+
+</menu>
+
+

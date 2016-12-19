@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    style="@style/listViewActivatedStyle">
+
+    <ImageView android:id="@android:id/icon"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:scaleType="centerCrop"
+        style="@style/quickContactBadgeStyle"
+        android:src="@drawable/ic_contact_picture_holo_light"/>
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/text2"
+        android:layout_toRightOf="@android:id/icon"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_view_nome_contatos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_nome_telefone"
+        android:layout_marginStart="17dp"
+        android:textColor="#7c7a7a"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@android:id/icon"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

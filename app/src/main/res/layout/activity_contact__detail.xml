@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!-- This layout is used by ContactDetailFragment to show contact details: contact photo, contact
+     display name and a dynamic number of addresses (if the contact has any) inside a ScrollView.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_contact_picture_holo_light_large"
+            android:contentDescription="Profile Picture"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/contact_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical"
+                    android:minHeight="280dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Telefone"
+                        android:id="@+id/textView"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="47dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    <View
+                        android:layout_width="222dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_alignStart="@+id/textView"
+                        android:layout_below="@+id/textView"
+                        android:id="@+id/view2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Email"
+                        android:id="@+id/textView2"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignStart="@+id/textView"
+                        android:layout_marginTop="51dp" />
+                    <View
+                        android:layout_width="222dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_alignStart="@+id/textView2"
+                        android:layout_below="@+id/textView2"
+                        android:id="@+id/view" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Endereço"
+                        android:id="@+id/textView3"
+                        android:layout_marginTop="44dp"
+                        android:layout_below="@+id/view"
+                        android:layout_alignStart="@+id/view" />
+                    <View
+                        android:layout_width="222dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_alignStart="@+id/textView2"
+                        android:layout_below="@+id/textView3"
+                        android:id="@+id/view3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/tvPhone"
+                        android:layout_below="@+id/view2"
+                        android:layout_alignStart="@+id/view2"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/tvEmail"
+                        android:layout_below="@+id/view"
+                        android:layout_alignStart="@+id/view"
+                        android:layout_marginTop="9dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/tvEndereco"
+                        android:layout_below="@+id/view3"
+                        android:layout_alignStart="@+id/view3"
+                        android:layout_marginTop="7dp" />
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

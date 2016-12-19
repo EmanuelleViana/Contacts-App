@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="listViewActivatedStyle"/>
+    <style name="quickContactBadgeStyle">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+    <style name="iconsS">
+
+    </style>
+
+    <style name="searchTextHiglight">
+        <!--   <item name="android:textColor">@color/holo_blue</item> -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="addressHeader" parent="@android:style/TextAppearance.Small">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="addressDetail" parent="@android:style/TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="contactNameTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">38sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="addressButton"/>
+
+</resources>
